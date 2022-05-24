@@ -8,14 +8,22 @@
 
 #text {
   font-size: 40px;
+  text-align: center;
 }
 
 #author {
   font-size: 25px;
   font-style: italic;
-  text-align: right;
+  text-align: center;
   position: relative;
   top: -50px;
+}
+
+#quote-box {
+  padding: 50px;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 #quote-wrap {
@@ -33,12 +41,14 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   border-radius: 0.3em;
+  position: absolute;
+  bottom: 200px
 }
 
 #tweet-quote {
   text-decoration: none;
-  color: grey;
+  color: #1d9cef;
   font-weight: bold;
   position: relative;
-  top: -100px;
+  margin: auto;
 }
