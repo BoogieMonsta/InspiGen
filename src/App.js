@@ -21,26 +21,12 @@ class QuoteBox extends React.Component {
 			index: Math.floor(Math.random() * 1600),
 		};
 		this.nextQuote = this.nextQuote.bind(this);
-		// this.getQuotes = this.getQuotes.bind(this);
 	}
-	// getQuotes = async function () {
-	// 	return await fetch('https://type.fit/api/quotes')
-	// 		.then(res => res.json())
-	// 		.then(data => {
-	// 			this.setQuotes(data);
-	// 		});
-	// };
 	nextQuote = () => {
 		this.setState(() => ({
 			index: Math.floor(Math.random() * 1600),
 		}));
 	};
-	// componentDidMount() {
-	// 	this.setState(() => ({
-	// 		quotes: this.getQuotes,
-	// 	}));
-	// 	console.log(this.state.quotes);
-	// }
 	render() {
 		const quotes = this.state.quotes;
 		const index = this.state.index;
@@ -48,8 +34,8 @@ class QuoteBox extends React.Component {
 		return (
 			<div id='quote-box'>
 				<Quote text={quotes[index].text} author={quotes[index].author} />
-				<a id='tweet-quote' href='https://twitter.com/intent/tweet'>
-					Tweet it
+				<a id='tweet-quote' href='https://twitter.com/intent/tweet?text=Just%20caught%20myself%20about%20to%tweet%20an%20inspiring%20quote...%20Now%20I%20know%20I%20need%20a%20break,%20fr%20fr'>
+					tweet it
 				</a>
 				<br />
 				<button id='new-quote' onClick={this.nextQuote}>

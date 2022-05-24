@@ -48,7 +48,10 @@
 #tweet-quote {
   text-decoration: none;
   color: #1d9cef;
-  font-weight: bold;
+  /* font-weight: bold; */
   position: relative;
   margin: auto;
+  border: 1px solid #1d9cef;
+  border-radius: 1.5em;
+  padding: 0.5em 1em 0.65em 1em;
 }
