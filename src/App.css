@@ -8,22 +8,25 @@
 
 #text {
   font-size: 40px;
-  text-align: center;
+  text-align: left;
+  color: #333;
 }
 
 #author {
   font-size: 25px;
   font-style: italic;
-  text-align: center;
+  text-align: right;
+  transform: translate(-80px, -30px);
   position: relative;
-  top: -50px;
+  color: #333;
 }
 
 #quote-box {
-  padding: 50px;
+  padding: 20px 75px 60px 75px;
   max-width: 50%;
   display: flex;
   flex-direction: column;
+  border-radius: 2em;
 }
 
 #quote-wrap {
@@ -35,13 +38,13 @@
   width: auto;
   align-self: center;
   border: none;
-  background-color: black;
+  background-color: #333;
   color: white;
   padding: 1em;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   border-radius: 0.3em;
-  position: absolute;
+  position: sticky;
   bottom: 200px;
   cursor: pointer;
 }
