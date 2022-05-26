@@ -22,6 +22,7 @@ function App() {
 			} else {
 				const styleBg = {
 					background: `no-repeat center/100% url(${result.response.urls.regular})`,
+          backgroundSize: 'cover'
 				};
 				setStyleBg(styleBg);
 			}
@@ -64,7 +65,7 @@ class QuoteBox extends React.Component {
 				</a>
 				<br />
 				<button id='new-quote' onClick={this.nextQuote}>
-					Next Quote
+					Next
 				</button>
 			</div>
 		);
