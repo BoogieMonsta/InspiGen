@@ -65,3 +65,12 @@
   display: block;
   width: fit-content;
 }
+
+.visible {
+  opacity: 100%;
+  transition: opacity 1s;
+}
+.hidden {
+  opacity: 0;
+  transition: opacity 1s;
+}
