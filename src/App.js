@@ -34,7 +34,7 @@ class QuoteBox extends React.Component {
 		return (
 			<div id='quote-box'>
 				<Quote text={quotes[index].text} author={quotes[index].author} />
-				<a id='tweet-quote' href='https://twitter.com/intent/tweet?text=Just%20caught%20myself%20about%20to%tweet%20an%20inspiring%20quote...%20Now%20I%20know%20I%20need%20a%20break,%20fr%20fr'>
+				<a id='tweet-quote' href='https://twitter.com/intent/tweet?text=Just%20caught%20myself%20about%20to%20tweet%20an%20inspiring%20quote...%20I%20need%20a%20break,%20fr%20fr'>
 					tweet it
 				</a>
 				<br />
