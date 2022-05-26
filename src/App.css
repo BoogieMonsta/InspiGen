@@ -27,8 +27,8 @@
 	flex-direction: column;
 	border-radius: 2em;
 	background: rgba(255, 255, 255, 0.1);
-	backdrop-filter: blur(20px) brightness(75%);
-	filter: drop-shadow(1px 2px 1px #00000073);
+	backdrop-filter: blur(20px) brightness(70%) contrast(85%);
+	filter: drop-shadow(1px 2px 3px #00000044);
 }
 
 #quote-wrap {
