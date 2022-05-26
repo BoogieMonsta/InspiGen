@@ -42,16 +42,17 @@
   letter-spacing: 0.05em;
   border-radius: 0.3em;
   position: absolute;
-  bottom: 200px
+  bottom: 200px;
+  cursor: pointer;
 }
 
 #tweet-quote {
   text-decoration: none;
   color: #1d9cef;
-  /* font-weight: bold; */
+  font-weight: bold;
   position: relative;
   margin: auto;
-  border: 1px solid #1d9cef;
+  border: 3px solid #1d9cef;
   border-radius: 1.5em;
   padding: 0.5em 1em 0.65em 1em;
 }
