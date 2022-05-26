@@ -24,7 +24,6 @@
 #quote-box {
 	padding: 20px 75px 60px 75px;
 	max-width: 50%;
-	display: flex;
 	flex-direction: column;
 	border-radius: 2em;
 	background: rgba(255, 255, 255, 0.1);
@@ -38,28 +37,31 @@
 }
 
 #new-quote {
-	width: auto;
-	align-self: center;
+	width: fit-content;
 	font-weight: bold;
 	border: none;
-	background-color: #ffffff26;
+  background: none;
 	color: #c2c2c2;
 	padding: 1em;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	border-radius: 0.3em;
 	position: sticky;
-	bottom: 200px;
+	bottom: 0;
+  left: 100%;
 	cursor: pointer;
+  transform: translateX(-40px);
 }
 
 #tweet-quote {
-	text-decoration: none;
-	color: #1d9cef;
-	font-weight: bold;
-	position: relative;
-	margin: auto;
-	border: 3px solid #1d9cef;
-	border-radius: 1.5em;
-	padding: 0.5em 1em 0.65em 1em;
+  text-decoration: none;
+  color: #1d9cef;
+  font-weight: bold;
+  position: sticky;
+  bottom: 0;
+  right: 100%;
+  margin: auto;
+  padding-left: 1em;
+  transform: translate(60px, 61px);
+  display: block;
+  width: fit-content;
 }
