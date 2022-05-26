@@ -68,9 +68,9 @@
 
 .visible {
   opacity: 100%;
-  transition: opacity 1s;
+  transition: opacity 0.2s ease-in-out;
 }
 .hidden {
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 1s ease-in-out 1s;
 }
