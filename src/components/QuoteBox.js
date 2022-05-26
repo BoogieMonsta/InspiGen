@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {quotes} from './assets/Quotes.js';
+import {quotes} from '../assets/Quotes.js';
 import { Icon } from '@iconify/react';
 import { Quote } from './Quote.js';
 

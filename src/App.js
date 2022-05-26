@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import { createApi } from 'unsplash-js';
-import { QuoteBox } from './QuoteBox.js';
+import { QuoteBox } from './components/QuoteBox.js';
 
 function App() {
 	const [styleBg, setStyleBg] = useState(null);
