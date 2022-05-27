@@ -4,7 +4,8 @@ import { Quote } from './Quote.js';
 import { Twitter } from './Twitter.js';
 import { Next } from './Next.js';
 
-export function QuoteBox(props) {
+export function QuoteBox() {
+
 	const [displayBtns, setDisplayBtns] = useState('hidden');
 	const [index, setIndex] = useState(Math.floor(Math.random() * quotes.length));
 	const handleMouseEnter = () => {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import { QuoteBox } from './components/QuoteBox.js';
 
@@ -7,20 +7,24 @@ function App() {
 
 	const unsplashUrl = 'https://source.unsplash.com/random/1280x720/?nature';
 
-	const nextPic = () => {
-		const styleBg = {
-			background: `no-repeat center/100% url(${unsplashUrl})`
-		};
-		setStyleBg(styleBg);
-	};
 
-	React.useEffect(() => {
-		nextPic();
+	useEffect(() => {
+		const fetchRequest = async () => {
+			console.log('fetching...');
+			const data = await fetch(unsplashUrl);
+      const styleBg = {
+        backgroundImage: `url(${data.url})`,
+      };
+      setStyleBg(styleBg);
+			console.log('fetched', data.url);
+		};
+
+		fetchRequest();
 	}, []);
 
 	return (
 		<div className='App' style={styleBg}>
-			<QuoteBox trigger={nextPic} />
+			<QuoteBox />
 		</div>
 	);
 }
