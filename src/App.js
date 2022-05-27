@@ -5,11 +5,15 @@ import { QuoteBox } from './components/QuoteBox.js';
 function App() {
 	const [styleBg, setStyleBg] = useState(null);
 
-	React.useEffect(() => {
-		const styleBg = {
+  const nextPic = () => {
+    const styleBg = {
 			background: `no-repeat center/100% url('https://source.unsplash.com/random/1280x720/?nature')`,
 		};
 		setStyleBg(styleBg);
+  }
+
+	React.useEffect(() => {
+		nextPic();
 	}, []);
 
 	return (
