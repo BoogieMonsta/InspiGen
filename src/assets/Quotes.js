@@ -5373,7 +5373,7 @@ export const quotes = [
 	},
 	{
 		text: 'To be able to give away riches is mandatory if you wish to possess them. This is the only way that you will be truly rich.',
-		author: 'Mahummad Ali',
+		author: 'Muhammad Ali',
 	},
 	{
 		text: 'Learning without reflection is a waste, reflection without learning is dangerous.',
@@ -5832,7 +5832,7 @@ export const quotes = [
 		author: 'Rabindranath Tagore',
 	},
 	{
-		text: 'If only wed stop trying to be happy wed have a pretty good time.',
+		text: 'If only we could stop trying to be happy, we would have a pretty good time.',
 		author: 'Edith Wharton',
 	},
 	{

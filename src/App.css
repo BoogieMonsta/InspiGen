@@ -7,6 +7,7 @@
 	background-size: cover !important;
 	background-repeat: no-repeat;
 	background-position: center;
+	transition: background-image 1s ease-in-out;
 }
 
 #text {
@@ -43,37 +44,37 @@
 	width: fit-content;
 	font-weight: bold;
 	border: none;
-  background: none;
+	background: none;
 	color: #c2c2c2;
 	padding: 1em;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	position: sticky;
 	bottom: 0;
-  left: 100%;
+	left: 100%;
 	cursor: pointer;
-  transform: translateX(-40px);
+	transform: translateX(-40px);
 }
 
 #tweet-quote {
-  text-decoration: none;
-  color: #1d9cef;
-  font-weight: bold;
-  position: sticky;
-  bottom: 0;
-  right: 100%;
-  margin: auto;
-  padding-left: 1em;
-  transform: translate(60px, 61px);
-  display: block;
-  width: fit-content;
+	text-decoration: none;
+	color: #1d9cef;
+	font-weight: bold;
+	position: sticky;
+	bottom: 0;
+	right: 100%;
+	margin: auto;
+	padding-left: 1em;
+	transform: translate(60px, 61px);
+	display: block;
+	width: fit-content;
 }
 
 .visible {
-  opacity: 100%;
-  transition: opacity 0.2s ease-in-out;
+	opacity: 100%;
+	transition: opacity 0.2s ease-in-out;
 }
 .hidden {
-  opacity: 0;
-  transition: opacity 1s ease-in-out 1s;
+	opacity: 0;
+	transition: opacity 1s ease-in-out 1s;
 }
