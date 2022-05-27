@@ -4,6 +4,7 @@
 	justify-content: center;
 	height: 100vh;
 	width: 100vw;
+	background-size: cover;
 }
 
 #text {
@@ -26,8 +27,8 @@
 	max-width: 25%;
 	flex-direction: column;
 	border-radius: 2em;
-	background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-	backdrop-filter: blur(20px) brightness(70%) contrast(85%);
+	background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
+	backdrop-filter: blur(15px) brightness(60%) contrast(70%);
 	filter: drop-shadow(1px 2px 3px #00000073);
 }
 
