@@ -5,13 +5,13 @@ import { Twitter } from './Twitter.js';
 import { Next } from './Next.js';
 
 export function QuoteBox(props) {
-	const [display, setDisplay] = useState('hidden');
+	const [displayBtns, setDisplayBtns] = useState('hidden');
 	const [index, setIndex] = useState(Math.floor(Math.random() * quotes.length));
 	const handleMouseEnter = () => {
-		setDisplay('visible');
+		setDisplayBtns('visible');
 	};
 	const handleMouseLeave = () => {
-		setDisplay('hidden');
+		setDisplayBtns('hidden');
 	};
 	const nextQuote = () => {
 		setIndex(Math.floor(Math.random() * quotes.length));
@@ -24,8 +24,8 @@ export function QuoteBox(props) {
 			onMouseLeave={handleMouseLeave}
 		>
 			<Quote text={quotes[index].text} author={quotes[index].author} />
-			<Twitter visib={display} />
-			<Next visib={display} trigger={nextQuote}/>
+			<Twitter visib={displayBtns} />
+			<Next visib={displayBtns} trigger={nextQuote}/>
 		</div>
 	);
 }

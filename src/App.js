@@ -5,12 +5,14 @@ import { QuoteBox } from './components/QuoteBox.js';
 function App() {
 	const [styleBg, setStyleBg] = useState(null);
 
-  const nextPic = () => {
-    const styleBg = {
-			background: `no-repeat center/100% url('https://source.unsplash.com/random/1280x720/?nature')`,
+	const unsplashUrl = 'https://source.unsplash.com/random/1280x720/?nature';
+
+	const nextPic = () => {
+		const styleBg = {
+			background: `no-repeat center/100% url(${unsplashUrl})`
 		};
 		setStyleBg(styleBg);
-  }
+	};
 
 	React.useEffect(() => {
 		nextPic();
@@ -18,7 +20,7 @@ function App() {
 
 	return (
 		<div className='App' style={styleBg}>
-			<QuoteBox />
+			<QuoteBox trigger={nextPic} />
 		</div>
 	);
 }
