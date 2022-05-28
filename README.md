@@ -2,7 +2,7 @@
 
 A simple app that displays an inspirational quote on top of a beautiful nature backdrop at the click of a button.
 
-You can see it live [here](https://6290efa33636c407f74e6556--legendary-khapse-e52882.netlify.app/).
+You can see it live [here](https://legendary-khapse-e52882.netlify.app/).
 
 Built in JavaScript using [React.js](https://reactjs.org/) as a [freeCodeCamp challenge](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine).
 
