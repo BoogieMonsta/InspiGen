@@ -6,12 +6,12 @@ import { Next } from './Next.js';
 import styled from 'styled-components';
 
 export const QuoteBox = props => {
-	const [displayBtns, setDisplayBtns] = useState('hidden');
+	const [displayBtns, setDisplayBtns] = useState(false);
 	const handleMouseEnter = () => {
-		setDisplayBtns('visible');
+		setDisplayBtns(true);
 	};
 	const handleMouseLeave = () => {
-		setDisplayBtns('hidden');
+		setDisplayBtns(false);
 	};
 
 	return (
@@ -24,8 +24,8 @@ export const QuoteBox = props => {
 				text={quotes[props.index].text}
 				author={quotes[props.index].author}
 			/>
-			<Twitter visib={displayBtns} />
-			<Next visib={displayBtns} trigger={props.onNext} />
+			<Twitter displayBtns={displayBtns} />
+			<Next displayBtns={displayBtns} trigger={props.onNext} />
 		</Wrapper>
 	);
 };
