@@ -11,6 +11,10 @@ const App = () => {
 
 	const fetchRequest = async () => {
 		const data = await fetch(unsplashUrl);
+		nextPic(data);
+	};
+
+	const nextPic = data => {
 		const styleBg = {
 			backgroundImage: `url(${data.url})`,
 		};
@@ -31,6 +35,6 @@ const App = () => {
 			<QuoteBox index={index} onNext={nextQuote} />
 		</div>
 	);
-}
+};
 
 export default App;
