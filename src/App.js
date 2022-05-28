@@ -3,7 +3,7 @@ import './App.css';
 import { QuoteBox } from './components/QuoteBox.js';
 import { quotes } from './assets/Quotes.js';
 
-function App() {
+const App = () => {
 	const [styleBg, setStyleBg] = useState(null);
 	const [index, setIndex] = useState(Math.floor(Math.random() * quotes.length));
 

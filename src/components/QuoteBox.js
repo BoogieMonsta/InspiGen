@@ -4,8 +4,7 @@ import { Quote } from './Quote.js';
 import { Twitter } from './Twitter.js';
 import { Next } from './Next.js';
 
-export function QuoteBox(props) {
-
+export const QuoteBox = props => {
 	const [displayBtns, setDisplayBtns] = useState('hidden');
 	const handleMouseEnter = () => {
 		setDisplayBtns('visible');
@@ -20,9 +19,12 @@ export function QuoteBox(props) {
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}
 		>
-			<Quote text={quotes[props.index].text} author={quotes[props.index].author} />
+			<Quote
+				text={quotes[props.index].text}
+				author={quotes[props.index].author}
+			/>
 			<Twitter visib={displayBtns} />
-			<Next visib={displayBtns} trigger={props.onNext}/>
+			<Next visib={displayBtns} trigger={props.onNext} />
 		</div>
 	);
-}
+};
