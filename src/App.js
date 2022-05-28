@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import { QuoteBox } from './components/QuoteBox.js';
 import { quotes } from './assets/Quotes.js';
+import styled from 'styled-components';
 
 const App = () => {
 	const [styleBg, setStyleBg] = useState(null);
@@ -31,10 +32,22 @@ const App = () => {
 	}, []);
 
 	return (
-		<div className='App' style={styleBg}>
+		<AppWrapper className='App' style={styleBg}>
 			<QuoteBox index={index} onNext={nextQuote} />
-		</div>
+		</AppWrapper>
 	);
 };
 
+const AppWrapper = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	background-size: cover !important;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: background-image 1s ease-in-out;
+`;
 export default App;
+

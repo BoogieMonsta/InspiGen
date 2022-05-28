@@ -3,6 +3,7 @@ import { quotes } from '../assets/Quotes.js';
 import { Quote } from './Quote.js';
 import { Twitter } from './Twitter.js';
 import { Next } from './Next.js';
+import styled from 'styled-components';
 
 export const QuoteBox = props => {
 	const [displayBtns, setDisplayBtns] = useState('hidden');
@@ -14,7 +15,7 @@ export const QuoteBox = props => {
 	};
 
 	return (
-		<div
+		<Wrapper
 			id='quote-box'
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}
@@ -25,6 +26,16 @@ export const QuoteBox = props => {
 			/>
 			<Twitter visib={displayBtns} />
 			<Next visib={displayBtns} trigger={props.onNext} />
-		</div>
+		</Wrapper>
 	);
 };
+
+const Wrapper = styled.div`
+	padding: 20px 75px 60px 75px;
+	max-width: 25%;
+	flex-direction: column;
+	border-radius: 2em;
+	background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
+	backdrop-filter: blur(15px) brightness(60%) contrast(70%);
+	filter: drop-shadow(1px 2px 3px #00000073);
+`;
