@@ -2,7 +2,7 @@
 
 A simple app that displays an inspirational quote on top of a beautiful nature backdrop at the click of a button.
 
-You can see it live [here](https://legendary-khapse-e52882.netlify.app/).
+You can see it live [here](https://inspigen.netlify.app/).
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0d8300b8-d943-448b-9199-ff0435b00db9/deploy-status)](https://app.netlify.com/sites/inspigen/deploys)
 
